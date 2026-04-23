@@ -9,347 +9,159 @@
     :root {
       --bg: #0b1220;
       --panel: rgba(255, 255, 255, 0.08);
-      --panel-strong: rgba(255, 255, 255, 0.12);
       --text: #eef2ff;
       --muted: rgba(238, 242, 255, 0.78);
       --line: rgba(255, 255, 255, 0.14);
-      --accent: #7c3aed;
-      --accent-2: #22c55e;
-      --shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
-      --radius: 24px;
-      --max: 980px;
+      --radius: 20px;
     }
 
-    * {
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      font-family: Inter, system-ui, sans-serif;
+      background: linear-gradient(180deg, #050816, #0b1220);
       color: var(--text);
-      background:
-        radial-gradient(circle at top left, rgba(124, 58, 237, 0.35), transparent 28%),
-        radial-gradient(circle at top right, rgba(34, 197, 94, 0.18), transparent 24%),
-        linear-gradient(180deg, #050816 0%, #0b1220 100%);
-      min-height: 100vh;
-      line-height: 1.7;
     }
 
-    .wrap {
-      width: min(var(--max), calc(100% - 32px));
-      margin: 0 auto;
-      padding: 32px 0 56px;
-    }
-
-    .hero {
-      border: 1px solid var(--line);
-      background: linear-gradient(180deg, rgba(255,255,255,0.10), rgba(255,255,255,0.06));
-      backdrop-filter: blur(18px);
-      border-radius: 32px;
-      box-shadow: var(--shadow);
-      padding: 34px 28px;
-      overflow: hidden;
-      position: relative;
-    }
-
-    .hero::after {
-      content: "";
-      position: absolute;
-      inset: auto -80px -120px auto;
-      width: 260px;
-      height: 260px;
-      border-radius: 50%;
-      background: radial-gradient(circle, rgba(124, 58, 237, 0.35), transparent 62%);
-      pointer-events: none;
-    }
-
-    .badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 8px 14px;
-      border: 1px solid var(--line);
-      border-radius: 999px;
-      color: var(--muted);
-      background: rgba(255,255,255,0.05);
-      font-size: 0.94rem;
-      margin-bottom: 18px;
-    }
-
-    .dot {
-      width: 10px;
-      height: 10px;
-      border-radius: 999px;
-      background: linear-gradient(135deg, var(--accent), #a855f7);
-      box-shadow: 0 0 18px rgba(124, 58, 237, 0.7);
-    }
-
-    h1 {
-      margin: 0;
-      font-size: clamp(2rem, 4vw, 3.4rem);
-      line-height: 1.1;
-      letter-spacing: -0.03em;
-    }
-
-    .subtitle {
-      margin: 14px 0 0;
-      max-width: 70ch;
-      font-size: 1.02rem;
-      color: var(--muted);
-    }
-
-    .meta-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 14px;
-      margin-top: 24px;
-    }
-
-    .meta-card {
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,0.05);
-      border-radius: 20px;
-      padding: 16px 18px;
-    }
-
-    .meta-label {
-      display: block;
-      color: var(--muted);
-      font-size: 0.88rem;
-      margin-bottom: 6px;
-    }
-
-    .meta-value {
-      font-weight: 650;
-      font-size: 1rem;
-    }
-
-    .content {
-      margin-top: 24px;
-      display: grid;
-      gap: 18px;
-    }
+    .wrap { max-width: 900px; margin: auto; padding: 30px 16px; }
 
     .card {
       border: 1px solid var(--line);
-      background: rgba(255,255,255,0.06);
-      backdrop-filter: blur(14px);
+      background: rgba(255,255,255,0.05);
       border-radius: var(--radius);
-      box-shadow: 0 14px 40px rgba(0, 0, 0, 0.18);
-      padding: 26px 24px;
+      padding: 22px;
+      margin-bottom: 20px;
     }
 
-    .section-title {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin: 0 0 14px;
-      font-size: 1.25rem;
-    }
+    h1 { margin: 0 0 10px; }
+    h2 { margin-top: 0; }
 
-    .section-title::before {
-      content: "";
-      width: 10px;
-      height: 10px;
+    ul { margin-left: 20px; }
+    .rtl ul { margin-right: 20px; }
+
+    .hidden { display: none; }
+    .rtl { direction: rtl; text-align: right; }
+
+    .switch-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #7c3aed;
+      color: white;
+      border: none;
+      padding: 12px 18px;
       border-radius: 999px;
-      background: linear-gradient(135deg, var(--accent-2), #86efac);
-      box-shadow: 0 0 18px rgba(34, 197, 94, 0.45);
-      flex: 0 0 auto;
+      cursor: pointer;
+      font-weight: bold;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.3);
     }
 
-    p {
-      margin: 0 0 14px;
-      color: var(--text);
-    }
-
-    ul {
-      margin: 10px 0 0 20px;
-      padding: 0;
-    }
-
-    li {
-      margin: 8px 0;
-      color: var(--text);
-    }
-
-    .note {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
-
-    .split {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 18px;
-    }
-
-    .lang-tag {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 12px;
-      padding: 6px 10px;
-      border-radius: 999px;
-      border: 1px solid var(--line);
-      background: rgba(255,255,255,0.04);
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-
-    .rtl {
-      direction: rtl;
-      text-align: right;
-      font-family: "Segoe UI", Tahoma, Arial, sans-serif;
-    }
-
-    .rtl ul {
-      margin: 10px 20px 0 0;
-    }
-
-    .footer {
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.92rem;
-      padding: 22px 0 0;
-    }
-
-    a {
-      color: #c4b5fd;
-      text-decoration: none;
-      word-break: break-word;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    @media (max-width: 760px) {
-      .hero,
-      .card {
-        padding: 22px 18px;
-      }
-
-      .meta-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .section-title {
-        font-size: 1.12rem;
-      }
-    }
+    .footer { text-align: center; color: var(--muted); }
   </style>
 </head>
 <body>
-  <main class="wrap">
-    <section class="hero" aria-labelledby="title">
-      <div class="badge"><span class="dot"></span> Privacy Policy</div>
-      <h1 id="title">Gymmawy Pro</h1>
-      <p class="subtitle">
-        This Privacy Policy explains how Gymmawy Pro handles information. The app is designed with a local-first approach, so your data stays on your device.
-      </p>
 
-      <div class="meta-grid" role="list" aria-label="Policy details">
-        <div class="meta-card" role="listitem">
-          <span class="meta-label">Effective Date</span>
-          <div class="meta-value">May 2024</div>
-        </div>
-        <div class="meta-card" role="listitem">
-          <span class="meta-label">App Name</span>
-          <div class="meta-value">Gymmawy Pro</div>
-        </div>
-        <div class="meta-card" role="listitem">
-          <span class="meta-label">Data Model</span>
-          <div class="meta-value">Local-First</div>
-        </div>
-      </div>
+  <main class="wrap">
+
+    <!-- English -->
+    <section id="en" class="card">
+      <h1>Privacy Policy for Gymmawy Pro</h1>
+      <p><strong>Effective Date:</strong> April 23, 2026</p>
+
+      <p>Gymmawy Pro ("we," "our," or "the App") is committed to protecting your privacy. This Privacy Policy explains how we handle your information.</p>
+
+      <p><strong>1. Data Collection and Storage</strong></p>
+      <p>Gymmawy Pro is a local-first application.</p>
+      <ul>
+        <li><strong>Personal Information:</strong> You may provide a display name and a profile picture within the App. This information is stored locally on your device only. We do not collect, transmit, or store this data on any external servers.</li>
+        <li><strong>Fitness Data:</strong> All workout logs, sets, reps, weights, and progress statistics are stored locally on your device.</li>
+        <li><strong>Device Permissions:</strong> The App may request access to your device's vibration hardware for haptic feedback during workouts.</li>
+      </ul>
+
+      <p><strong>2. Data Usage</strong></p>
+      <ul>
+        <li>Displaying your progress charts and history.</li>
+        <li>Personalizing your experience with your chosen name and photo.</li>
+        <li>Calculating your weekly workout goals.</li>
+      </ul>
+
+      <p><strong>3. Third-Party Services</strong></p>
+      <p>The App does not share any data with third-party services. We do not use any analytics, tracking, or advertising SDKs that collect your personal information.</p>
+
+      <p><strong>4. Data Security</strong></p>
+      <p>Since all data is stored locally on your device, the security of your data depends on your device's security settings. If you delete the App or clear its data, all information stored within the App will be permanently lost.</p>
+
+      <p><strong>5. Children’s Privacy</strong></p>
+      <p>Our App does not collect any information from anyone, including children under the age of 13.</p>
+
+      <p><strong>6. Changes to This Policy</strong></p>
+      <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+
+      <p><strong>7. Contact Us</strong></p>
+      <p>Email: hossamglal09@gmail.com</p>
     </section>
 
-    <section class="content">
-      <article class="card">
-        <div class="lang-tag">English</div>
-        <h2 class="section-title">Privacy Policy</h2>
-        <p><strong>Gymmawy Pro</strong> (&ldquo;we,&rdquo; &ldquo;our,&rdquo; or &ldquo;the App&rdquo;) is committed to protecting your privacy. This Privacy Policy explains how we handle your information.</p>
+    <!-- Arabic -->
+    <section id="ar" class="card rtl hidden">
+      <h1>سياسة الخصوصية لتطبيق جيمّاوي برو</h1>
+      <p><strong>تاريخ النفاذ:</strong> 23 أبريل 2026</p>
 
-        <p><strong>1. Data Collection and Storage</strong></p>
-        <p>Gymmawy Pro is a local-first application.</p>
-        <ul>
-          <li><strong>Personal Information:</strong> You may provide a display name and a profile picture within the App. This information is stored locally on your device only. We do not collect, transmit, or store this data on any external servers.</li>
-          <li><strong>Fitness Data:</strong> All workout logs, sets, reps, weights, and progress statistics are stored locally on your device.</li>
-          <li><strong>Device Permissions:</strong> The App may request access to your device&rsquo;s vibration hardware for haptic feedback during workouts.</li>
-        </ul>
+      <p>يلتزم تطبيق جيمّاوي برو ("نحن") بحماية خصوصيتك. توضح سياسة الخصوصية هذه كيفية تعاملنا مع معلوماتك.</p>
 
-        <p><strong>2. Data Usage</strong></p>
-        <p>The data stored within the App is used solely to provide its core features, such as:</p>
-        <ul>
-          <li>Displaying your progress charts and history.</li>
-          <li>Personalizing your experience with your chosen name and photo.</li>
-          <li>Calculating your weekly workout goals.</li>
-        </ul>
+      <p><strong>١. جمع البيانات وتخزينها</strong></p>
+      <p>تطبيق جيمّاوي برو هو تطبيق يعتمد على التخزين المحلي أولاً.</p>
+      <ul>
+        <li><strong>المعلومات الشخصية:</strong> يمكنك إدخال اسم عرض وصورة ملف شخصي داخل التطبيق. يتم تخزين هذه المعلومات محلياً على جهازك فقط. نحن لا نجمع هذه البيانات أو ننقلها أو نخزنها على أي خوادم خارجية.</li>
+        <li><strong>بيانات اللياقة البدنية:</strong> يتم تخزين جميع سجلات التمارين والمجموعات والعدات والأوزان وإحصائيات التقدم محلياً على جهازك.</li>
+        <li><strong>أذونات الجهاز:</strong> قد يطلب التطبيق الوصول إلى خاصية الاهتزاز في جهازك لتوفير ردود فعل لمسية أثناء التمارين.</li>
+      </ul>
 
-        <p><strong>3. Third-Party Services</strong></p>
-        <p>The App does not share any data with third-party services. We do not use any analytics, tracking, or advertising SDKs that collect your personal information.</p>
+      <p><strong>٢. استخدام البيانات</strong></p>
+      <ul>
+        <li>عرض رسوم التقدم البيانية وتاريخ التمارين.</li>
+        <li>تخصيص تجربتك بالاسم والصورة التي اخترتها.</li>
+        <li>حساب أهدافك الرياضية الأسبوعية.</li>
+      </ul>
 
-        <p><strong>4. Data Security</strong></p>
-        <p>Since all data is stored locally on your device, the security of your data depends on your device&rsquo;s security settings. If you delete the App or clear its data, all information stored within the App will be permanently lost.</p>
+      <p><strong>٣. خدمات الطرف الثالث</strong></p>
+      <p>لا يشارك التطبيق أي بيانات مع خدمات طرف ثالث. نحن لا نستخدم أي أدوات تحليل أو تتبع أو إعلانات تقوم بجمع معلوماتك الشخصية.</p>
 
-        <p><strong>5. Children’s Privacy</strong></p>
-        <p>Our App does not collect any information from anyone, including children under the age of 13.</p>
+      <p><strong>٤. أمن البيانات</strong></p>
+      <p>بما أن جميع البيانات تُخزن محلياً على جهازك، فإن أمن بياناتك يعتمد على إعدادات الأمان في جهازك. إذا قمت بحذف التطبيق أو مسح بياناته، فستفقد جميع المعلومات المخزنة داخله نهائياً.</p>
 
-        <p><strong>6. Changes to This Policy</strong></p>
-        <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
+      <p><strong>٥. خصوصية الأطفال</strong></p>
+      <p>لا يقوم تطبيقنا بجمع أي معلومات من أي شخص، بما في ذلك الأطفال دون سن ١٣ عاماً.</p>
 
-        <p><strong>7. Contact Us</strong></p>
-        <p>If you have any questions about this Privacy Policy, please contact us at: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-      </article>
+      <p><strong>٦. التغييرات على هذه السياسة</strong></p>
+      <p>قد نقوم بتحديث سياسة الخصوصية الخاصة بنا من وقت لآخر. سنقوم بإخطارك بأي تغييرات عن طريق نشر سياسة الخصوصية الجديدة على هذه الصفحة.</p>
 
-      <article class="card rtl" lang="ar" dir="rtl">
-        <div class="lang-tag">العربية</div>
-        <h2 class="section-title">سياسة الخصوصية</h2>
-        <p><strong>جيمّاوي برو</strong> (&ldquo;نحن&rdquo;) ملتزمون بحماية خصوصيتك. توضح سياسة الخصوصية هذه كيفية تعاملنا مع معلوماتك.</p>
-
-        <p><strong>١. جمع البيانات وتخزينها</strong></p>
-        <p>تطبيق جيمّاوي برو هو تطبيق يعتمد على التخزين المحلي أولاً.</p>
-        <ul>
-          <li><strong>المعلومات الشخصية:</strong> يمكنك إدخال اسم عرض وصورة ملف شخصي داخل التطبيق. يتم تخزين هذه المعلومات محلياً على جهازك فقط. نحن لا نجمع هذه البيانات أو ننقلها أو نخزنها على أي خوادم خارجية.</li>
-          <li><strong>بيانات اللياقة البدنية:</strong> يتم تخزين جميع سجلات التمارين والمجموعات والعدات والأوزان وإحصائيات التقدم محلياً على جهازك.</li>
-          <li><strong>أذونات الجهاز:</strong> قد يطلب التطبيق الوصول إلى خاصية الاهتزاز في جهازك لتوفير ردود فعل لمسية أثناء التمارين.</li>
-        </ul>
-
-        <p><strong>٢. استخدام البيانات</strong></p>
-        <p>تُستخدم البيانات المخزنة داخل التطبيق فقط لتوفير ميزاته الأساسية، مثل:</p>
-        <ul>
-          <li>عرض رسوم التقدم البيانية وتاريخ التمارين.</li>
-          <li>تخصيص تجربتك بالاسم والصورة التي اخترتها.</li>
-          <li>حساب أهدافك الرياضية الأسبوعية.</li>
-        </ul>
-
-        <p><strong>٣. خدمات الطرف الثالث</strong></p>
-        <p>لا يشارك التطبيق أي بيانات مع خدمات طرف ثالث. نحن لا نستخدم أي أدوات تحليل أو تتبع أو إعلانات تقوم بجمع معلوماتك الشخصية.</p>
-
-        <p><strong>٤. أمن البيانات</strong></p>
-        <p>بما أن جميع البيانات تُخزن محلياً على جهازك، فإن أمن بياناتك يعتمد على إعدادات الأمان في جهازك. إذا قمت بحذف التطبيق أو مسح بياناته، فستفقد جميع المعلومات المخزنة داخله نهائياً.</p>
-
-        <p><strong>٥. خصوصية الأطفال</strong></p>
-        <p>لا يقوم تطبيقنا بجمع أي معلومات من أي شخص، بما في ذلك الأطفال دون سن ١٣ عاماً.</p>
-
-        <p><strong>٦. التغييرات على هذه السياسة</strong></p>
-        <p>قد نقوم بتحديث سياسة الخصوصية الخاصة بنا من وقت لآخر. سنقوم بإخطارك بأي تغييرات عن طريق نشر سياسة الخصوصية الجديدة على هذه الصفحة.</p>
-
-        <p><strong>٧. اتصل بنا</strong></p>
-        <p>إذا كان لديك أي أسئلة حول سياسة الخصوصية هذه، يرجى التواصل معنا عبر: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
-      </article>
-
-      <div class="card note">
-        <strong>Tip:</strong> Replace <strong>May 2024</strong> and <strong>your-email@example.com</strong> before publishing to GitHub Pages.
-      </div>
+      <p><strong>٧. اتصل بنا</strong></p>
+      <p>البريد الإلكتروني: hossamglal09@gmail.com</p>
     </section>
 
     <div class="footer">© Gymmawy Pro</div>
   </main>
+
+  <button class="switch-btn" onclick="toggleLang()">AR</button>
+
+  <script>
+    function toggleLang() {
+      const en = document.getElementById('en');
+      const ar = document.getElementById('ar');
+      const btn = document.querySelector('.switch-btn');
+
+      if (en.classList.contains('hidden')) {
+        en.classList.remove('hidden');
+        ar.classList.add('hidden');
+        btn.textContent = 'AR';
+      } else {
+        en.classList.add('hidden');
+        ar.classList.remove('hidden');
+        btn.textContent = 'EN';
+      }
+    }
+  </script>
+
 </body>
 </html>
