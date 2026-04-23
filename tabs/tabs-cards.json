@@ -1,0 +1,128 @@
+{
+  "tabs": [
+    {
+      "id": "home",
+      "tab_title_en": "Home",
+      "tab_title_ar": "الرئيسية",
+      "features": [
+        {
+          "title_en": "Daily Command Center",
+          "title_ar": "مركز القيادة اليومي",
+          "caption_en": "Get a high-level snapshot of your fitness day with glowing stat rings for calories, time, and steps.",
+          "caption_ar": "احصل على ملخص شامل ليومك الرياضي مع حلقات إحصائية متوهجة للسعرات، الوقت، والخطوات."
+        },
+        {
+          "title_en": "Personalized Greetings",
+          "title_ar": "تحية مخصصة لك",
+          "caption_en": "Experience a dynamic interface that greets you differently from morning to night, matching your natural rhythm.",
+          "caption_ar": "واجهة ديناميكية تتفاعل معك بتحيات مختلفة من الصباح إلى المساء، لتناسب إيقاع يومك الطبيعي."
+        },
+        {
+          "title_en": "Instant 'Start' Access",
+          "title_ar": "وصول سريع للتمرين",
+          "caption_en": "No digging through menus. Your scheduled workout is ready on the main card—just hit play and lift.",
+          "caption_ar": "لا داعي للبحث في القوائم. تمرينك المجدول جاهز في البطاقة الرئيسية—فقط اضغط ابدأ وانطلق."
+        },
+        {
+          "title_en": "Aurora Visual Experience",
+          "title_ar": "تجربة بصرية ساحرة",
+          "caption_en": "Enjoy our signature Aurora background effect that brings a premium, energetic atmosphere to your screen.",
+          "caption_ar": "استمتع بتأثير خلفية الأورورا الفريد الذي يضفي طابعاً فاخراً وحيوياً على شاشة هاتفك."
+        }
+      ]
+    },
+    {
+      "id": "workout",
+      "tab_title_en": "Workout",
+      "tab_title_ar": "التمارين",
+      "features": [
+        {
+          "title_en": "Personalized Week Start",
+          "title_ar": "بداية أسبوعك الخاصة",
+          "caption_en": "Your fitness week starts the day you do. We save your first workout day as your permanent weekly reset day.",
+          "caption_ar": "أسبوعك الرياضي يبدأ في اليوم الذي تختاره. نحفظ يوم تمرينك الأول ليكون موعد التصفير الأسبوعي الدائم."
+        },
+        {
+          "title_en": "Cinema-Ratio Banners",
+          "title_ar": "بطاقات عرض سينمائية",
+          "caption_en": "Browse your split with beautiful 4:1 ratio banner cards featuring exercise previews for every training day.",
+          "caption_ar": "تصفح جدولك ببطاقات عريضة فاخرة تعرض صوراً مسبقة للتمارين لكل يوم تدريبي بشكل احترافي."
+        },
+        {
+          "title_en": "Live Progress Tracking",
+          "title_ar": "تتبع حي للتقدم",
+          "caption_en": "Sleek purple progress bars on each card show exactly how much of your workout is finished in real-time.",
+          "caption_ar": "أشرطة تقدم أرجوانية أنيقة على كل بطاقة توضح لك الجزء المكتمل من تمرينك في الوقت الفعلي."
+        },
+        {
+          "title_en": "Next-Workout Intel",
+          "title_ar": "ذكاء التمرين التالي",
+          "caption_en": "The dashboard intelligently highlights your upcoming session, ensuring you stay consistent with your split.",
+          "caption_ar": "تقوم لوحة التحكم بتمييز حصتك القادمة بذكاء، مما يضمن لك الالتزام بجدولك دون ارتباك."
+        }
+      ]
+    },
+    {
+      "id": "progress",
+      "tab_title_en": "Progress",
+      "tab_title_ar": "التقدم",
+      "features": [
+        {
+          "title_en": "Visual Activity Charts",
+          "title_ar": "رسوم بيانية للنشاط",
+          "caption_en": "Transform your consistency into art with weekly activity bars that track your frequency and volume.",
+          "caption_ar": "حول التزامك إلى لوحة فنية مع رسوم بيانية أسبوعية تتبع تكرار تمارينك وحجم مجهودك."
+        },
+        {
+          "title_en": "Lifetime Achievement Wall",
+          "title_ar": "جدار الإنجازات",
+          "caption_en": "See your total impact: accumulated workout minutes, total sets completed, and every session logged.",
+          "caption_ar": "شاهد تأثير مجهودك الكلي: دقائق التمرين المتراكمة، مجموع المجموعات المكتملة، وكل حصة سجلتها."
+        },
+        {
+          "title_en": "Deep Session History",
+          "title_ar": "سجل جلسات عميق",
+          "caption_en": "Access a professional, detailed list of every workout you've finished, including dates and durations.",
+          "caption_ar": "قم بالوصول إلى قائمة احترافية ومفصلة لكل تمرين أنهيته، بما في ذلك التواريخ والمدد الزمنية."
+        },
+        {
+          "title_en": "Offline Data Speed",
+          "title_ar": "سرعة البيانات المحلية",
+          "caption_en": "Instant loading with 100% privacy. Your stats are stored locally, meaning they are always fast and always private.",
+          "caption_ar": "تحميل فوري مع خصوصية 100%. إحصائياتك مخزنة محلياً، مما يعني سرعة فائقة وسرية تامة."
+        }
+      ]
+    },
+    {
+      "id": "settings",
+      "tab_title_en": "Settings",
+      "tab_title_ar": "الإعدادات",
+      "features": [
+        {
+          "title_en": "Custom Pro Rest Timer",
+          "title_ar": "مؤقت راحة احترافي",
+          "caption_en": "Take control of recovery. Adjust your rest between 30s and 180s to hit your next set at peak power.",
+          "caption_ar": "تحكم في استشفائك. اضبط وقت الراحة بين 30 و 180 ثانية لتبدأ مجموعتك التالية بكامل قوتك."
+        },
+        {
+          "title_en": "Haptic Feedback Engine",
+          "title_ar": "محرك الاهتزاز التفاعلي",
+          "caption_en": "Feel your progress. The app vibrates your device when rest time is over, so you never miss a start.",
+          "caption_ar": "اشعر بتقدمك. يهتز التطبيق عند انتهاء وقت الراحة، لتنطلق في مجموعتك التالية دون تأخير."
+        },
+        {
+          "title_en": "Liquid Glass Profile",
+          "title_ar": "ملف شخصي زجاجي",
+          "caption_en": "Customize your Pro status with your name and profile picture, integrated into the glass UI.",
+          "caption_ar": "خصص هويتك الرياضية باسمك وصورتك الشخصية، المدمجة بشكل رائع في الواجهة الزجاجية."
+        },
+        {
+          "title_en": "Global Metric Flexibility",
+          "title_ar": "مرونة المقاييس العالمية",
+          "caption_en": "Seamlessly switch between Kilograms and Pounds to match your gym’s equipment exactly.",
+          "caption_ar": "بدّل بسلاسة بين الكيلوجرام والرطل لتتوافق تماماً مع الأوزان المتوفرة في صالتك الرياضية."
+        }
+      ]
+    }
+  ]
+}
